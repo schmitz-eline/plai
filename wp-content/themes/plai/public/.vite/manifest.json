@@ -1,0 +1,13 @@
+{
+  "wp-content/themes/plai/assets/css/styles.scss": {
+    "file": "assets/scss-D0fh3uF9.css",
+    "src": "wp-content/themes/plai/assets/css/styles.scss",
+    "isEntry": true
+  },
+  "wp-content/themes/plai/assets/js/main.js": {
+    "file": "assets/js-Ovk0aAv7.js",
+    "name": "js",
+    "src": "wp-content/themes/plai/assets/js/main.js",
+    "isEntry": true
+  }
+}
