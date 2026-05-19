@@ -1,0 +1,69 @@
+@use '../../../settings/variables/breakpoints';
+
+.footer {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+  border-top: 2px solid var(--pink);
+
+  @include breakpoints.tablet {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    padding: 2rem 3.2rem;
+  }
+
+  @include breakpoints.desktop {
+    padding: 2rem 4.4rem;
+  }
+
+  &--falc {
+    border-top: none;
+    justify-content: center;
+  }
+
+  img {
+    width: 20rem;
+  }
+
+  &__legal {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    @include breakpoints.tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__legal a {
+    font-family: SourceSans, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--pink);
+
+    @include breakpoints.tablet {
+      font-size: 1.6rem;
+    }
+
+    @include breakpoints.desktop {
+      font-size: 2rem;
+    }
+  }
+
+  &__legal a:hover,
+  &__legal a:focus {
+    color: var(--pink-hover);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 20%;
+  }
+}
+
+.error404 .footer {
+  border-top: none;
+}

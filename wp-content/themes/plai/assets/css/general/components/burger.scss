@@ -1,0 +1,49 @@
+.burger {
+  display: flex;
+  align-items: center;
+  background-color: var(--pale-pink);
+  border: 2px solid var(--pink);
+  padding: 0.8rem 1.2rem;
+  gap: 1.2rem;
+  border-radius: 50px;
+  min-height: 3.6rem;
+
+  &__icon img {
+    width: 1.6rem;
+  }
+
+  &__label {
+    color: var(--pink);
+    font-family: SourceSans, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 1.6rem;
+  }
+
+  &__icon {
+    display: flex;
+  }
+
+  &__icon--close {
+    display: none;
+  }
+
+  // inversion des icônes quand le menu est ouvert
+
+  &.is-open .burger__icon--open {
+    display: none;
+  }
+
+  &.is-open .burger__icon--close {
+    display: flex;
+  }
+}
+
+.burger:hover {
+  background-color: var(--pale-pink-hover);
+}
+
+.burger:focus {
+  background-color: var(--pale-pink-hover);
+  outline: 1px solid var(--pink);
+}
