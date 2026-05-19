@@ -1,0 +1,29 @@
+// Style principal
+
+:root {
+  font-size: 10px;
+}
+
+body * {
+  font-family: 'SourceSans', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  color: var(--grey);
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+picture {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}

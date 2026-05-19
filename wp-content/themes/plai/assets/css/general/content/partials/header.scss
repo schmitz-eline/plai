@@ -1,0 +1,149 @@
+@use '../../../settings/variables/breakpoints';
+
+.header {
+  background-color: var(--white);
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 2rem;
+
+  @include breakpoints.tablet {
+    padding: 2rem 3.2rem;
+  }
+
+  @include breakpoints.desktop {
+    padding: 2rem 4.4rem;
+  }
+
+  &--public,
+  &--private {
+    justify-content: space-between;
+  }
+
+  &--falc {
+    gap: 4rem;
+  }
+
+  &__home-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+  }
+
+  &__home-link:hover,
+  &__home-link:focus {
+    transform: scale(1.05);
+  }
+
+  &__home-link img {
+    width: 12rem;
+  }
+
+  &__logo-falc {
+    width: 3.6rem;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+
+    &.is-open {
+      max-height: 300px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .menu-item {
+      background-color: var(--pale-pink);
+      border-top: 2px solid var(--pink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        color: var(--pink);
+        font-family: SourceSans, Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        line-height: 1;
+        font-size: 1.6rem;
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 2rem 0;
+      }
+
+      a::before {
+        content: '';
+        display: inline-block;
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: var(--pink);
+      }
+
+      a[href*="falc"]::before {
+        mask-image: url('/wp-content/themes/plai/assets/svg/falc-icon.svg');
+        width: 1.6rem;
+        height: 2rem;
+      }
+
+      a[href*="connexion"]::before {
+        mask-image: url('/wp-content/themes/plai/assets/svg/arrow.svg');
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+
+      a[href*="missions"]::before {
+        mask-image: url('/wp-content/themes/plai/assets/svg/target.svg');
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+
+      a[href*="sensibilisations"]::before {
+        mask-image: url('/wp-content/themes/plai/assets/svg/book.svg');
+        width: 1.6rem;
+        height: 1.4rem;
+      }
+
+      a[href*="ressources"]::before {
+        mask-image: url('/wp-content/themes/plai/assets/svg/file.svg');
+        width: 1.6rem;
+        height: 1.8rem;
+      }
+
+      a[href*="contact"]::before {
+        mask-image: url('/wp-content/themes/plai/assets/svg/mail.svg');
+        width: 1.6rem;
+        height: 1.3rem;
+      }
+
+      a[href*="logout"]::before {
+        mask-image: url('/wp-content/themes/plai/assets/svg/logout.svg');
+        width: 1.6rem;
+        height: 1.5rem;
+      }
+    }
+
+    .menu-item:last-of-type {
+      border-bottom: 2px solid var(--pink);
+    }
+
+    .menu-item:hover,
+    .menu-item:focus {
+      background-color: var(--pale-pink-hover);
+    }
+  }
+}

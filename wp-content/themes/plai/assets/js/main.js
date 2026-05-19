@@ -1,1 +1,2 @@
-console.log('Ceci est un test');
+import './settings.js';
+import './burger.js';

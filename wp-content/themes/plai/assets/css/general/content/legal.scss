@@ -1,0 +1,57 @@
+@use '../../settings/variables/breakpoints';
+
+.legal {
+  &__content {
+    min-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 4rem auto;
+    padding: 0 2rem;
+
+    @include breakpoints.tablet {
+      gap: 6rem;
+      margin: 6rem auto;
+      padding: 0 4rem;
+    }
+
+    @include breakpoints.desktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8rem;
+      margin: 8rem auto;
+      padding: 0 8rem;
+    }
+  }
+
+  @include breakpoints.desktop {
+    &__item {
+      flex: 0 0 calc(50% - 4rem);
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__address {
+    margin-top: 1.2rem;
+  }
+
+  &__text a {
+    color: var(--pink);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 20%;
+  }
+
+  &__text a:hover {
+    color: var(--pink-hover);
+  }
+}

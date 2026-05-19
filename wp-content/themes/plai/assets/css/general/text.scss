@@ -1,0 +1,74 @@
+@use '../settings/variables/breakpoints';
+
+.main-title {
+  color: var(--pink);
+  font-family: Mikado, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4%;
+  font-size: 2.4rem;
+
+  @include breakpoints.tablet {
+    font-size: 3.6rem;
+  }
+
+  @include breakpoints.desktop {
+    font-size: 4.8rem;
+  }
+}
+
+.secondary-title {
+  color: var(--pink);
+  font-family: Mikado, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  letter-spacing: 4%;
+  font-size: 1.6rem;
+
+  @include breakpoints.tablet {
+    font-size: 2rem;
+  }
+
+  @include breakpoints.desktop {
+    font-size: 2.4rem;
+  }
+}
+
+.text,
+.stage-main-text {
+  max-width: 600px;
+  font-family: SourceSans, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: var(--grey);
+
+  @include breakpoints.tablet {
+    font-size: 1.6rem;
+  }
+
+  @include breakpoints.desktop {
+    font-size: 2rem;
+  }
+}
+
+.text {
+  font-weight: 400;
+}
+
+.stage-main-text {
+  font-weight: 600;
+}
+
+.stage-secondary-text {
+  color: var(--pink);
+  font-family: Mikado, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 4%;
+  font-size: 1.4rem;
+
+  @include breakpoints.tablet {
+    font-size: 1.6rem;
+  }
+
+  @include breakpoints.desktop {
+    font-size: 2rem;
+  }
+}

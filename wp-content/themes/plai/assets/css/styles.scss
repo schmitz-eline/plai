@@ -1,1 +1,17 @@
 @use 'settings/reset';
+
+@use 'settings/variables/colors';
+@use 'settings/variables/fonts';
+@use 'settings/variables/breakpoints';
+
+@use 'general/general';
+@use 'general/text';
+
+@use 'general/content/legal';
+
+@use 'general/content/partials/header';
+@use 'general/content/partials/footer';
+
+@use 'general/components/burger';
+@use 'general/components/action-link';
+@use 'general/components/stage';
