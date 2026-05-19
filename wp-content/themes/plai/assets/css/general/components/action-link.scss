@@ -1,0 +1,51 @@
+.action {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  gap: 1.2rem;
+  border-radius: 50px;
+  width: fit-content;
+
+  span {
+    font-family: SourceSans, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  span::before {
+    content: '';
+    display: inline-block;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+
+.action.back {
+  background-color: var(--pink);
+
+  span {
+    color: var(--pale-pink);
+  }
+
+  span::before {
+    mask-image: url('/wp-content/themes/plai/assets/svg/back.svg');
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--pale-pink);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.action.back:hover,
+.action.back:focus {
+  background-color: var(--pink-hover);
+}
+
+.action:hover span::before,
+.action:focus span::before {
+  transform: translateX(-20%);
+}
