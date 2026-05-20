@@ -18,7 +18,6 @@
 }
 
 .secondary-title {
-  color: var(--pink);
   font-family: Mikado, Arial, Helvetica, sans-serif;
   font-weight: 900;
   letter-spacing: 4%;
@@ -31,6 +30,29 @@
   @include breakpoints.desktop {
     font-size: 2.4rem;
   }
+}
+
+.third-title,
+.card-title {
+  font-family: Mikado, Arial, Helvetica, sans-serif;
+  letter-spacing: 4%;
+  font-size: 1.4rem;
+
+  @include breakpoints.tablet {
+    font-size: 1.6rem;
+  }
+
+  @include breakpoints.desktop {
+    font-size: 2rem;
+  }
+}
+
+.third-title {
+  font-weight: 700;
+}
+
+.card-title {
+  font-weight: 900;
 }
 
 .text,
@@ -57,8 +79,8 @@
   font-weight: 600;
 }
 
-.stage-secondary-text {
-  color: var(--pink);
+.stage-secondary-text,
+.card-secondary-text {
   font-family: Mikado, Arial, Helvetica, sans-serif;
   font-weight: 700;
   letter-spacing: 4%;
@@ -71,4 +93,8 @@
   @include breakpoints.desktop {
     font-size: 2rem;
   }
+}
+
+.stage-secondary-text {
+  color: var(--pink);
 }

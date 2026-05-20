@@ -1,6 +1,6 @@
 {
   "wp-content/themes/plai/assets/css/styles.scss": {
-    "file": "assets/scss-CAse3vA7.css",
+    "file": "assets/scss-Mmv2QZIY.css",
     "src": "wp-content/themes/plai/assets/css/styles.scss",
     "isEntry": true
   },
@@ -30,36 +30,44 @@
     "src": "wp-content/themes/plai/assets/js/main.js",
     "isEntry": true
   },
+  "wp-content/themes/plai/assets/svg/alert.svg": {
+    "file": "assets/alert-CiA4tlnc.svg",
+    "src": "wp-content/themes/plai/assets/svg/alert.svg"
+  },
   "wp-content/themes/plai/assets/svg/arrow.svg": {
-    "file": "assets/arrow-BxzjAO2p.svg",
+    "file": "assets/arrow-BToPW4AP.svg",
     "src": "wp-content/themes/plai/assets/svg/arrow.svg"
   },
   "wp-content/themes/plai/assets/svg/back.svg": {
-    "file": "assets/back-DVpVH3jQ.svg",
+    "file": "assets/back-CiE_3q5G.svg",
     "src": "wp-content/themes/plai/assets/svg/back.svg"
   },
   "wp-content/themes/plai/assets/svg/book.svg": {
-    "file": "assets/book--NG3QlXf.svg",
+    "file": "assets/book-CS-k2AEN.svg",
     "src": "wp-content/themes/plai/assets/svg/book.svg"
   },
   "wp-content/themes/plai/assets/svg/falc-icon.svg": {
-    "file": "assets/falc-icon-H8Aux94X.svg",
+    "file": "assets/falc-icon-DRuMwlFu.svg",
     "src": "wp-content/themes/plai/assets/svg/falc-icon.svg"
   },
   "wp-content/themes/plai/assets/svg/file.svg": {
-    "file": "assets/file-DM2tC1Fq.svg",
+    "file": "assets/file-BYitkbk-.svg",
     "src": "wp-content/themes/plai/assets/svg/file.svg"
   },
+  "wp-content/themes/plai/assets/svg/info.svg": {
+    "file": "assets/info-DkDXNRhY.svg",
+    "src": "wp-content/themes/plai/assets/svg/info.svg"
+  },
   "wp-content/themes/plai/assets/svg/logout.svg": {
-    "file": "assets/logout-ytcmakla.svg",
+    "file": "assets/logout-CrY8XrYK.svg",
     "src": "wp-content/themes/plai/assets/svg/logout.svg"
   },
   "wp-content/themes/plai/assets/svg/mail.svg": {
-    "file": "assets/mail-CWTDby8q.svg",
+    "file": "assets/mail-C9ILnuCm.svg",
     "src": "wp-content/themes/plai/assets/svg/mail.svg"
   },
   "wp-content/themes/plai/assets/svg/target.svg": {
-    "file": "assets/target-DV_5I3Qg.svg",
+    "file": "assets/target-D8nkyI75.svg",
     "src": "wp-content/themes/plai/assets/svg/target.svg"
   }
 }

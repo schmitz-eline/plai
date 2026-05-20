@@ -23,9 +23,13 @@ function track_last_page(): void
 
 add_action('template_redirect', 'track_last_page');
 
-// Images
-add_image_size('plai-mobile', 768);
-add_image_size('plai-desktop', 1920);
+// Images full-width (stage et page 404)
+add_image_size('plai-full-mobile', 768);
+add_image_size('plai-full-desktop', 1920);
+
+// Images des cartes
+add_image_size('plai-card-mobile', 480);
+add_image_size('plai-card-desktop', 720);
 
 function plai_asset(string $filename): string
 {

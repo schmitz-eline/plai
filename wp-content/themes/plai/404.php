@@ -34,19 +34,19 @@ $image = get_field('not_found_image', 'option');
                 <!-- WEBP mobile -->
                 <source
                         srcset="<?= get_template_directory_uri() ?>/assets/images/<?= pathinfo($image['filename'], PATHINFO_FILENAME) ?>-mobile.webp"
-                        media="(max-width: 700px)"
+                        media="(max-width: 699px)"
                         type="image/webp">
 
                 <!-- WEBP desktop -->
                 <source
                         srcset="<?= get_template_directory_uri() ?>/assets/images/<?= pathinfo($image['filename'], PATHINFO_FILENAME) ?>-desktop.webp"
-                        media="(min-width: 701px)"
+                        media="(min-width: 700px)"
                         type="image/webp">
 
                 <!-- Fallback JPG géré par wordpress -->
                 <?= wp_get_attachment_image(
                         $image['id'],
-                        'plai-desktop',
+                        'plai-full-desktop',
                         false,
                         [
                                 'class' => 'not-found__image',
