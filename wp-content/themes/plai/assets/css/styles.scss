@@ -1,4 +1,5 @@
 @use 'settings/reset';
+@use 'settings/sro';
 
 @use 'settings/variables/colors';
 @use 'settings/variables/fonts';
@@ -7,6 +8,7 @@
 @use 'general/general';
 @use 'general/text';
 
+@use 'general/content/home';
 @use 'general/content/legal';
 
 @use 'general/content/partials/header';
@@ -15,3 +17,4 @@
 @use 'general/components/burger';
 @use 'general/components/action-link';
 @use 'general/components/stage';
+@use 'general/components/card';

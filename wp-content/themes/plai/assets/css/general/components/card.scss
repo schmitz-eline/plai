@@ -1,0 +1,179 @@
+@use '../../settings/variables/breakpoints';
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  width: 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+
+  @include breakpoints.tablet {
+    padding: 3.2rem;
+    gap: 3.2rem;
+    max-width: 600px;
+    border-width: 2.4px;
+    border-radius: 12px;
+  }
+
+  @include breakpoints.desktop {
+    padding: 4.4rem;
+    gap: 4.4rem;
+    max-width: 800px;
+    border-width: 3.2px;
+    border-radius: 16px;
+  }
+
+  &__title--info,
+  &__title--alert {
+    display: flex;
+    gap: 1.2rem;
+
+    @include breakpoints.tablet {
+      gap: 1.6rem;
+    }
+
+    @include breakpoints.desktop {
+      gap: 2rem;
+    }
+  }
+
+  &__title--info:before,
+  &__title--alert:before {
+    content: '';
+    display: inline-block;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  &__title--info:before {
+    mask-image: url('/wp-content/themes/plai/assets/svg/info.svg');
+    width: 1.6rem;
+    height: 1.6rem;
+
+    @include breakpoints.tablet {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    @include breakpoints.desktop {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &__title--alert:before {
+    mask-image: url('/wp-content/themes/plai/assets/svg/alert.svg');
+    width: 1.6rem;
+    height: 1.4rem;
+
+    @include breakpoints.tablet {
+      width: 2rem;
+      height: 1.8rem;
+    }
+
+    @include breakpoints.desktop {
+      width: 2.4rem;
+      height: 2.2rem;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    height: auto;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &--pink {
+    background-color: var(--pale-pink);
+    border-color: var(--pink);
+
+    .card__title,
+    .card__secondary-text {
+      color: var(--pink);
+    }
+
+    .card__link {
+      background-color: var(--pink);
+    }
+
+    .card__link:hover,
+    .card__link:focus {
+      background-color: var(--pink-hover);
+    }
+
+    .card__link span {
+      color: var(--pale-pink);
+    }
+
+    .card__link span:after {
+      background-color: var(--pale-pink);
+    }
+  }
+
+  &--blue {
+    background-color: var(--pale-blue);
+    border-color: var(--blue);
+
+    .card__title,
+    .card__secondary-text {
+      color: var(--blue);
+    }
+
+    .card__title--alert:before,
+    .card__link {
+      background-color: var(--blue);
+    }
+
+    .card__link span {
+      color: var(--pale-blue);
+    }
+
+    .card__link span:after {
+      background-color: var(--pale-blue);
+    }
+
+    .card__link:hover,
+    .card__link:focus {
+      background-color: var(--blue-hover);
+    }
+  }
+
+  &--green {
+    background-color: var(--pale-green);
+    border-color: var(--green);
+
+    .card__title,
+    .card__secondary-text {
+      color: var(--green);
+    }
+
+    .card__title--info:before,
+    .card__link {
+      background-color: var(--green);
+    }
+
+    .card__link span {
+      color: var(--pale-green);
+    }
+
+    .card__link span:after {
+      background-color: var(--pale-green);
+    }
+
+    .card__link:hover,
+    .card__link:focus {
+      background-color: var(--green-hover);
+    }
+  }
+}
