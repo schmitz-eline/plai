@@ -1,3 +1,5 @@
+@use '../settings/variables/breakpoints';
+
 // Style principal
 
 :root {
@@ -20,4 +22,44 @@ body {
 a {
   text-decoration: none;
   outline: none;
+}
+
+// Mise en page générale des contenus
+
+.homepage,
+.missions {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 4rem;
+
+  @include breakpoints.tablet {
+    gap: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  @include breakpoints.desktop {
+    gap: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  &__content {
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    gap: 4rem;
+
+    @include breakpoints.tablet {
+      padding: 0 4rem;
+      gap: 6rem;
+    }
+
+    @include breakpoints.desktop {
+      padding: 0 8rem;
+      gap: 8rem;
+    }
+  }
 }
