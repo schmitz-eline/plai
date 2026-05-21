@@ -1,13 +1,12 @@
 <?php
-// Champs
-$title = get_field('main_title');
-$main_text = get_field('stage_main_text');
-$secondary_text = get_field('stage_secondary_text');
-$home_link = get_field('stage_home_link');
-$home_link_label = get_field('stage_home_link_label');
-$contact_link = get_field('stage_contact_link');
-$contact_link_label = get_field('stage_contact_link_label');
-$image = get_field('stage_image');
+$title = get_sub_field('page_title');
+$text = get_sub_field('stage_text');
+$secondary_text = get_sub_field('stage_secondary_text');
+$home_link = get_sub_field('stage_home_link');
+$home_link_label = get_sub_field('stage_home_link_label');
+$contact_link = get_sub_field('stage_contact_link');
+$contact_link_label = get_sub_field('stage_contact_link_label');
+$image = get_sub_field('stage_image');
 ?>
 
 <section class="stage" itemscope itemtype="https://schema.org/WebPageElement">
@@ -17,9 +16,9 @@ $image = get_field('stage_image');
         </h1>
     <?php endif; ?>
 
-    <?php if ($main_text): ?>
-        <p class="stage__main-text stage-main-text" itemprop="description">
-            <?= esc_html($main_text) ?>
+    <?php if ($text): ?>
+        <p class="stage__text stage-text" itemprop="description">
+            <?= esc_html($text) ?>
         </p>
     <?php endif; ?>
 
