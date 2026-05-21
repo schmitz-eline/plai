@@ -30,6 +30,7 @@
   &__title--info,
   &__title--alert {
     display: flex;
+    align-items: center;
     gap: 1.2rem;
 
     @include breakpoints.tablet {
@@ -99,11 +100,13 @@
     border-color: var(--pink);
 
     .card__title,
-    .card__secondary-text {
+    .card__secondary-text,
+    .card__detailed-list__title {
       color: var(--pink);
     }
 
-    .card__link {
+    .card__link,
+    .card__detailed-list__title:before {
       background-color: var(--pink);
     }
 
@@ -126,11 +129,13 @@
     border-color: var(--blue);
 
     .card__title,
-    .card__secondary-text {
+    .card__secondary-text,
+    .card__detailed-list__title {
       color: var(--blue);
     }
 
     .card__title--alert:before,
+    .card__detailed-list__title:before,
     .card__link {
       background-color: var(--blue);
     }
@@ -154,11 +159,13 @@
     border-color: var(--green);
 
     .card__title,
-    .card__secondary-text {
+    .card__secondary-text,
+    .card__detailed-list__title {
       color: var(--green);
     }
 
     .card__title--info:before,
+    .card__detailed-list__title:before,
     .card__link {
       background-color: var(--green);
     }

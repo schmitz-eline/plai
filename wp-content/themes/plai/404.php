@@ -18,7 +18,7 @@ $image = get_field('not_found_image', 'option');
         <?php endif; ?>
 
         <?php if ($text): ?>
-            <p class="not-found__text stage-main-text"><?= esc_html($text) ?></p>
+            <p class="not-found__text stage-text"><?= esc_html($text) ?></p>
         <?php endif; ?>
 
         <?php if ($back_link_label && $back_link_title): ?>

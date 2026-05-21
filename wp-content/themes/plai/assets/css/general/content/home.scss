@@ -1,23 +1,7 @@
 @use '../../settings/variables/breakpoints';
 
 .homepage {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  margin-bottom: 4rem;
-
-  @include breakpoints.tablet {
-    gap: 6rem;
-    margin-bottom: 6rem;
-  }
-
-  @include breakpoints.desktop {
-    gap: 8rem;
-    margin-bottom: 8rem;
-  }
-
-  &__intro,
-  &__content {
+  &__intro {
     min-height: fit-content;
     display: flex;
     align-items: center;
@@ -31,9 +15,7 @@
     @include breakpoints.tablet {
       padding: 0 8rem;
     }
-  }
 
-  &__intro {
     &__list {
       display: flex;
       flex-direction: column;
@@ -60,57 +42,10 @@
 
     &__title {
       color: var(--pink);
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 0.8rem;
-
-      @include breakpoints.tablet {
-        gap: 1.2rem;
-        margin-bottom: 1rem;
-      }
-
-      @include breakpoints.tablet {
-        gap: 1.4rem;
-        margin-bottom: 1.2rem;
-      }
     }
 
     &__title::before {
-      content: '';
-      display: block;
-      mask-size: 100% 100%;
-      mask-repeat: no-repeat;
-      mask-position: center;
-      mask-image: url('/wp-content/themes/plai/assets/svg/arrow.svg');
       background-color: var(--pink);
-      flex-shrink: 0;
-      line-height: 0;
-      width: 1rem;
-      height: 1rem;
-
-      @include breakpoints.tablet {
-        width: 1.2rem;
-        height: 1.2rem;
-      }
-
-      @include breakpoints.desktop {
-        width: 1.4rem;
-        height: 1.4rem;
-      }
-    }
-  }
-
-  &__content {
-    flex-direction: column;
-    gap: 4rem;
-
-    @include breakpoints.tablet {
-      gap: 6rem;
-    }
-
-    @include breakpoints.desktop {
-      gap: 8rem;
     }
   }
 }
