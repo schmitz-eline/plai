@@ -21,7 +21,11 @@ $rgpd_text = get_field('legal_rgpd_text');
 ?>
 
     <main class="legal" itemscope itemtype="https://schema.org/WebPage">
-        <?php get_template_part('templates/components/stage') ?>
+        <?php if (have_rows('stage')) : ?>
+            <?php while (have_rows('stage')) : the_row() ?>
+                <?php get_template_part('templates/components/stage') ?>
+            <?php endwhile; ?>
+        <?php endif; ?>
 
         <div class="legal__content">
             <ul class="legal__list">

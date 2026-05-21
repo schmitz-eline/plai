@@ -1,7 +1,11 @@
 <?php get_header('public'); ?>
 
     <main class="homepage" itemscope itemtype="https://schema.org/WebPage">
-        <?php get_template_part('templates/components/stage') ?>
+        <?php if (have_rows('stage')) : ?>
+            <?php while (have_rows('stage')) : the_row() ?>
+                <?php get_template_part('templates/components/stage') ?>
+            <?php endwhile; ?>
+        <?php endif; ?>
 
         <section class="homepage__intro">
             <h2 class="sro">Introduction</h2>
