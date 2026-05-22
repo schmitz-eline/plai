@@ -31,6 +31,10 @@ add_image_size('plai-full-desktop', 1920);
 add_image_size('plai-card-mobile', 480);
 add_image_size('plai-card-desktop', 720);
 
+// Images de la page FALC
+add_image_size('plai-falc-mobile', 600);
+add_image_size('plai-falc-desktop', 1200);
+
 // CPT Sensibilisations
 function plai_register_cpt_awareness(): void
 {

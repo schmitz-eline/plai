@@ -6,8 +6,12 @@
             $text = get_sub_field('card_detailed_list_text');
             ?>
             <div class="card__detailed-list__item">
-                <dt class="card__detailed-list__title card-secondary-text"><?= esc_html($title) ?></dt>
-                <dd class="card__detailed-list__text text"><?= esc_html($text) ?></dd>
+                <?php if ($title) : ?>
+                    <dt class="card__detailed-list__title card-secondary-text"><?= esc_html($title) ?></dt>
+                <?php endif; ?>
+                <?php if ($text) : ?>
+                    <dd class="card__detailed-list__text text"><?= esc_html($text) ?></dd>
+                <?php endif; ?>
             </div>
         <?php endwhile; ?>
     </dl>

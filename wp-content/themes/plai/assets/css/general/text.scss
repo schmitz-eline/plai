@@ -32,8 +32,7 @@
   }
 }
 
-.third-title,
-.card-title {
+.third-title {
   font-family: Mikado, Arial, Helvetica, sans-serif;
   letter-spacing: 4%;
   font-size: 1.4rem;
@@ -52,13 +51,24 @@
 }
 
 .card-title {
+  font-family: Mikado, Arial, Helvetica, sans-serif;
+  letter-spacing: 4%;
   font-weight: 900;
+  font-size: 1.6rem;
+
+  @include breakpoints.tablet {
+    font-size: 2rem;
+  }
+
+  @include breakpoints.desktop {
+    font-size: 2.4rem;
+  }
 }
 
 .text,
-.stage-text {
+.stage-text,
+.falc-text {
   max-width: 600px;
-  font-family: SourceSans, Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   color: var(--grey);
 
@@ -71,7 +81,13 @@
   }
 }
 
-.text {
+.text,
+.stage-text {
+  font-family: SourceSans, Arial, Helvetica, sans-serif;
+}
+
+.text,
+.falc-text {
   font-weight: 400;
 }
 
@@ -98,4 +114,23 @@
 .stage-secondary-text {
   color: var(--pink);
   max-width: 600px;
+}
+
+.falc-title {
+  color: var(--pink);
+  font-weight: 600;
+  font-size: 2rem;
+
+  @include breakpoints.tablet {
+    font-size: 2.4rem;
+  }
+
+  @include breakpoints.desktop {
+    font-size: 2.8rem;
+  }
+}
+
+.falc-title,
+.falc-text {
+  font-family: Arial, Helvetica, sans-serif;
 }
