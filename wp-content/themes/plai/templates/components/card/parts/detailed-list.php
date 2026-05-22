@@ -7,10 +7,14 @@
             ?>
             <div class="card__detailed-list__item">
                 <?php if ($title) : ?>
-                    <dt class="card__detailed-list__title card-secondary-text"><?= esc_html($title) ?></dt>
+                    <dt class="card__detailed-list__title card-secondary-text" itemprop="name">
+                        <?= esc_html($title) ?>
+                    </dt>
                 <?php endif; ?>
                 <?php if ($text) : ?>
-                    <dd class="card__detailed-list__text text"><?= esc_html($text) ?></dd>
+                    <dd class="card__detailed-list__text text" itemprop="description">
+                        <?= esc_html($text) ?>
+                    </dd>
                 <?php endif; ?>
             </div>
         <?php endwhile; ?>

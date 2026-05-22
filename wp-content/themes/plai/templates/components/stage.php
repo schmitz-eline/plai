@@ -9,9 +9,9 @@ $contact_link_label = get_sub_field('stage_contact_link_label');
 $image = get_sub_field('stage_image');
 ?>
 
-<section class="stage" itemscope itemtype="https://schema.org/WebPageElement">
+<section class="stage">
     <?php if ($title): ?>
-        <h1 class="stage__title main-title" itemprop="headline">
+        <h1 class="stage__title main-title" itemprop="name">
             <?= esc_html($title) ?>
         </h1>
     <?php endif; ?>
