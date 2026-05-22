@@ -26,8 +26,8 @@ $icon_class = ($title_icon && $title_icon !== 'none') ? 'card__title--' . $title
             <?php get_template_part('templates/components/card/parts/secondary-text'); ?>
         <?php endif; ?>
 
-        <?php if (in_array('simple_list', $items)) : ?>
-            <?php get_template_part('templates/components/card/parts/simple-list'); ?>
+        <?php if (in_array('awareness_list', $items)) : ?>
+            <?php get_template_part('templates/components/card/parts/awareness-list'); ?>
         <?php endif; ?>
 
         <?php if (in_array('detailed_list', $items)) : ?>

@@ -15,7 +15,8 @@
 }
 
 .homepage__intro__article,
-.card__detailed-list__item {
+.card__detailed-list__item,
+.card__awareness-list {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -30,7 +31,8 @@
 }
 
 .homepage__intro__title,
-.card__detailed-list__title {
+.card__detailed-list__title,
+.card__awareness-list__item {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -45,7 +47,8 @@
 }
 
 .homepage__intro__title:before,
-.card__detailed-list__title:before {
+.card__detailed-list__title:before,
+.card__awareness-list__item:before {
   content: '';
   display: block;
   mask-size: 100% 100%;
