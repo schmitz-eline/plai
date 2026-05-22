@@ -8,9 +8,11 @@ $color_class = 'card--' . $color;
 $icon_class = ($title_icon && $title_icon !== 'none') ? 'card__title--' . $title_icon : '';
 ?>
 
-<article class="card <?= esc_attr($color_class) ?>">
+<article class="card <?= esc_attr($color_class) ?>" itemscope itemtype="https://schema.org/WebPageElement">
     <?php if ($title) : ?>
-        <h3 class="card__title <?= esc_attr($icon_class) ?> card-title"><?= esc_html($title) ?></h3>
+        <h3 class="card__title <?= esc_attr($icon_class) ?> card-title" itemprop="name">
+            <?= esc_html($title) ?>
+        </h3>
     <?php endif; ?>
 
     <?php if (!empty($items)) : ?>

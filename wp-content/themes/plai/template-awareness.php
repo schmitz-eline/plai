@@ -13,7 +13,7 @@ get_header('private');
             <?php endwhile; ?>
         <?php endif; ?>
 
-        <section class="awareness__content">
+        <section class="awareness__content" itemprop="mainContentOfPage">
             <h2 class="sro">À propos des sensibilisations</h2>
             <?php if (have_rows('cards')) : ?>
                 <?php while (have_rows('cards')) : the_row() ?>

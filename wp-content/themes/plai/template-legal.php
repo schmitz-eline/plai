@@ -27,7 +27,7 @@ $rgpd_text = get_field('legal_rgpd_text');
             <?php endwhile; ?>
         <?php endif; ?>
 
-        <div class="legal__content">
+        <div class="legal__content" itemprop="mainContentOfPage">
             <ul class="legal__list">
                 <li class="legal__item">
                     <article class="legal__article">
@@ -35,7 +35,9 @@ $rgpd_text = get_field('legal_rgpd_text');
                             <h2 class="legal__title secondary-title"><?= esc_html($int_prop_title) ?></h2>
                         <?php endif; ?>
                         <?php if ($int_prop_text): ?>
-                            <p class="legal__text text"><?= esc_html($int_prop_text) ?></p>
+                            <p class="legal__text text" itemprop="description">
+                                <?= esc_html($int_prop_text) ?>
+                            </p>
                         <?php endif; ?>
                     </article>
                 </li>
@@ -46,10 +48,14 @@ $rgpd_text = get_field('legal_rgpd_text');
                             <h2 class="legal__title secondary-title"><?= esc_html($host_title) ?></h2>
                         <?php endif; ?>
                         <?php if ($host_text): ?>
-                            <div class="legal__text text"><?= wp_kses_post($host_text) ?></div>
+                            <div class="legal__text text" itemprop="description">
+                                <?= wp_kses_post($host_text) ?>
+                            </div>
                         <?php endif; ?>
                         <?php if ($host_address): ?>
-                            <address class="legal__address text"><?= esc_html($host_address) ?></address>
+                            <address class="legal__address text" itemprop="address">
+                                <?= esc_html($host_address) ?>
+                            </address>
                         <?php endif; ?>
                     </article>
                 </li>
@@ -60,7 +66,9 @@ $rgpd_text = get_field('legal_rgpd_text');
                             <h2 class="legal__title secondary-title"><?= esc_html($resp_title) ?></h2>
                         <?php endif; ?>
                         <?php if ($resp_text): ?>
-                            <p class="legal__text text"><?= esc_html($resp_text) ?></p>
+                            <p class="legal__text text" itemprop="description">
+                                <?= esc_html($resp_text) ?>
+                            </p>
                         <?php endif; ?>
                     </article>
                 </li>
@@ -71,7 +79,9 @@ $rgpd_text = get_field('legal_rgpd_text');
                             <h2 class="legal__title secondary-title"><?= esc_html($rgpd_title) ?></h2>
                         <?php endif; ?>
                         <?php if ($rgpd_text): ?>
-                            <p class="legal__text text"><?= esc_html($rgpd_text) ?></p>
+                            <p class="legal__text text" itemprop="description">
+                                <?= esc_html($rgpd_text) ?>
+                            </p>
                         <?php endif; ?>
                     </article>
                 </li>
