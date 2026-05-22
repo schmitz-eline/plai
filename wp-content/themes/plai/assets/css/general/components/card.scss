@@ -101,12 +101,16 @@
 
     .card__title,
     .card__secondary-text,
-    .card__detailed-list__title {
+    .card__detailed-list__title,
+    .card__awareness-list__item {
       color: var(--pink);
     }
 
-    .card__link,
-    .card__detailed-list__title:before {
+    .card__title--info:before,
+    .card__title--alert:before,
+    .card__detailed-list__title:before,
+    .card__awareness-list__item:before,
+    .card__link {
       background-color: var(--pink);
     }
 
@@ -130,12 +134,15 @@
 
     .card__title,
     .card__secondary-text,
-    .card__detailed-list__title {
+    .card__detailed-list__title,
+    .card__awareness-list__item {
       color: var(--blue);
     }
 
+    .card__title--info:before,
     .card__title--alert:before,
     .card__detailed-list__title:before,
+    .card__awareness-list__item:before,
     .card__link {
       background-color: var(--blue);
     }
@@ -160,12 +167,15 @@
 
     .card__title,
     .card__secondary-text,
-    .card__detailed-list__title {
+    .card__detailed-list__title,
+    .card__awareness-list__item {
       color: var(--green);
     }
 
     .card__title--info:before,
+    .card__title--alert:before,
     .card__detailed-list__title:before,
+    .card__awareness-list__item:before,
     .card__link {
       background-color: var(--green);
     }
