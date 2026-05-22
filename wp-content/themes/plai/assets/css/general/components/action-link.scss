@@ -16,6 +16,18 @@
   }
 }
 
+.stage__contact-link {
+  background-color: var(--pink);
+
+  span {
+    color: var(--pale-pink);
+  }
+
+  span::after {
+    background-color: var(--pale-pink);
+  }
+}
+
 .action.back {
   background-color: var(--pink);
 
@@ -37,6 +49,8 @@
   }
 }
 
+.stage__contact-link:hover,
+.stage__contact-link:focus,
 .action.back:hover,
 .action.back:focus {
   background-color: var(--pink-hover);
@@ -47,6 +61,7 @@
   transform: translateX(-20%);
 }
 
+.stage__contact-link span::after,
 .action.page span::after {
   content: '';
   display: inline-block;
@@ -58,7 +73,8 @@
   height: 1.2rem;
   transition: 0.2s ease-in-out;
 }
-
+.stage__contact-link:hover span::after,
+.stage__contact-link:focus span::after,
 .action.page:hover span::after,
 .action.page:focus span::after {
   transform: translateX(20%);
