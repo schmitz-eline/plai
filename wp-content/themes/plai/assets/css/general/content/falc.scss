@@ -1,0 +1,116 @@
+@use '../../settings/variables/breakpoints';
+
+.falc {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+
+  @include breakpoints.tablet {
+    gap: 6rem;
+    padding: 3.2rem;
+  }
+
+  @include breakpoints.desktop {
+    gap: 12rem;
+    padding: 4.4rem;
+    margin: 0 auto;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include breakpoints.tablet {
+      gap: 3.2rem;
+    }
+
+    @include breakpoints.desktop {
+      gap: 4.4rem;
+    }
+  }
+
+  &__text-media {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include breakpoints.tablet {
+      gap: 3.2rem;
+    }
+
+    @include breakpoints.desktop {
+      max-width: 80vw;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4.4rem;
+    }
+  }
+
+  &__picture {
+    display: block;
+    width: 80vw;
+    max-width: 600px;
+
+    @include breakpoints.tablet {
+      width: 60vw;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__texts,
+  &__paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    @include breakpoints.tablet {
+      gap: 1.4rem;
+    }
+
+    @include breakpoints.desktop {
+      gap: 1.6rem;
+    }
+  }
+
+  &__simple-list {
+    list-style: inside;
+
+    &__item::marker {
+      color: var(--pink);
+    }
+  }
+
+  &__detailed-list__title {
+    list-style: inside;
+
+    &::marker {
+      color: var(--pink);
+    }
+  }
+
+  &__detailed-list__text {
+    padding-left: 2.4rem;
+    margin-top: 0.8rem;
+
+    @include breakpoints.tablet {
+      margin-top: 1rem;
+    }
+
+    @include breakpoints.desktop {
+      margin-top: 1.2rem;
+    }
+  }
+
+  &__detailed-list__text::before {
+    content: '→ ';
+    color: var(--pink);
+  }
+}

@@ -16,7 +16,9 @@
 
 .homepage__intro__article,
 .card__detailed-list__item,
-.card__awareness-list {
+.card__awareness-list,
+.falc__simple-list,
+.falc__detailed-list {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
