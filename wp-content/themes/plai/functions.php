@@ -31,6 +31,37 @@ add_image_size('plai-full-desktop', 1920);
 add_image_size('plai-card-mobile', 480);
 add_image_size('plai-card-desktop', 720);
 
+// CPT Sensibilisations
+function plai_register_cpt_awareness(): void
+{
+    $labels = [
+        'name' => 'Sensibilisations',
+        'add_new_item' => 'Ajouter une sensibilisation',
+        'edit_item' => 'Modifier la sensibilisation',
+        'new_item' => 'Nouvelle sensibilisation',
+        'view_item' => 'Voir la sensibilisation',
+        'search_items' => 'Rechercher une sensibilisation',
+        'not_found' => 'Aucune sensibilisation trouvée',
+        'not_found_in_trash' => 'Aucune sensibilisation dans la corbeille'
+    ];
+
+    $args = [
+        'labels' => $labels,
+        'description' => 'Les sensibilisations proposées par le PLAI',
+        'menu_position' => 20,
+        'public' => false,
+        'show_ui' => true,
+        'menu_icon' => 'dashicons-lightbulb',
+        'supports' => array('title')
+    ];
+
+    register_post_type('awareness', $args);
+}
+
+add_action('init', 'plai_register_cpt_awareness');
+
+// Assets
+
 function plai_asset(string $filename): string
 {
     $manifest_path = get_theme_file_path('public/.vite/manifest.json');
