@@ -29,7 +29,7 @@ $image = get_sub_field('stage_image');
     <?php endif; ?>
 
     <?php if ($home_link): ?>
-        <a class="stage__home-link action"
+        <a class="stage__home-link action back"
            href="<?= esc_url($home_link['url']) ?>"
            title="<?= esc_attr($home_link['title']) ?>">
             <span><?= esc_html($home_link_label) ?></span>

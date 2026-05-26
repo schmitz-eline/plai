@@ -1,0 +1,18 @@
+.modal-card {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: transform .3s ease-in-out;
+  z-index: 20;
+}
+
+.modal-card.modal-is-open {
+  transform: translateY(0);
+}
+
+.action-modal {
+  border: none;
+  align-self: end;
+}
