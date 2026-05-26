@@ -3,6 +3,9 @@
 Template Name: Sensibilisations
 */
 
+// page privée
+plai_require_login();
+
 get_header('private');
 ?>
 
