@@ -15,6 +15,9 @@
 @use 'general/content/partials/header';
 @use 'general/content/partials/footer';
 
+@use 'general/content/form/form';
+@use 'general/content/form/modal';
+
 @use 'general/components/burger';
 @use 'general/components/action-link';
 @use 'general/components/stage';

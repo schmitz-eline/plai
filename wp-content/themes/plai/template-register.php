@@ -1,23 +1,25 @@
 <?php
 /*
-Template Name: Sensibilisations
+Template Name: Demande d’accès
 */
 
-// page privée
-plai_require_login();
-
-get_header('private');
+get_header('public');
 ?>
 
-    <main class="awareness">
+    <main class="register" itemscope itemtype="https://schema.org/WebPage">
         <?php if (have_rows('stage')) : ?>
             <?php while (have_rows('stage')) : the_row() ?>
                 <?php get_template_part('templates/components/stage') ?>
             <?php endwhile; ?>
         <?php endif; ?>
 
-        <section class="awareness__content" itemprop="mainContentOfPage">
-            <h2 class="sro">À propos des sensibilisations</h2>
+        <section class="register__content" itemprop="mainContentOfPage">
+            <h2 class="sro">Formulaire de demande d’accès</h2>
+
+            <?php get_template_part('templates/components/form/form', null, ['type' => 'register']) ?>
+
+            <?php get_template_part('templates/components/form/modal') ?>
+
             <?php if (have_rows('cards')) : ?>
                 <?php while (have_rows('cards')) : the_row() ?>
                     <?php get_template_part('templates/components/card/card') ?>

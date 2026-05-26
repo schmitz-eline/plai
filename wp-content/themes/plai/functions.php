@@ -2,6 +2,15 @@
 
 include('core/theme/configuration.php');
 
+// CPT
+include('core/theme/cpt/access_request.php');
+include('core/theme/cpt/awareness.php');
+include('core/theme/cpt/referent.php');
+include('core/theme/cpt/school.php');
+
+// Taxonomies
+include('core/theme/taxonomies/cities.php');
+
 // Déclaration des menus
 register_nav_menu('menu_public', 'Menu du header public');
 register_nav_menu('menu_private', 'Menu du header privé');
@@ -36,33 +45,36 @@ add_image_size('plai-falc-mobile', 600);
 add_image_size('plai-falc-desktop', 1200);
 
 // CPT Sensibilisations
-function plai_register_cpt_awareness(): void
-{
-    $labels = [
-        'name' => 'Sensibilisations',
-        'add_new_item' => 'Ajouter une sensibilisation',
-        'edit_item' => 'Modifier la sensibilisation',
-        'new_item' => 'Nouvelle sensibilisation',
-        'view_item' => 'Voir la sensibilisation',
-        'search_items' => 'Rechercher une sensibilisation',
-        'not_found' => 'Aucune sensibilisation trouvée',
-        'not_found_in_trash' => 'Aucune sensibilisation dans la corbeille'
-    ];
+add_action('init', 'plai_cpt_awareness');
 
-    $args = [
-        'labels' => $labels,
-        'description' => 'Les sensibilisations proposées par le PLAI',
-        'menu_position' => 20,
-        'public' => false,
-        'show_ui' => true,
-        'menu_icon' => 'dashicons-lightbulb',
-        'supports' => array('title')
-    ];
+// CPT Écoles
+add_action('init', 'plai_cpt_schools');
 
-    register_post_type('awareness', $args);
+// CPT Référents
+add_action('init', 'plai_cpt_referents');
+
+// CPT Demandes d’accès
+add_action('init', 'plai_cpt_access_requests');
+
+// Taxonomie Communes
+add_action('init', 'plai_tax_cities');
+
+// Charger les données AJAX
+foreach (glob(get_template_directory() . '/core/theme/ajax-data/*.php') as $file) {
+    require_once $file;
 }
 
-add_action('init', 'plai_register_cpt_awareness');
+// Gérer la connexion / déconnexion + vérifier si l’utilisateur est connecté pour lui donner accès aux pages privées
+require_once 'core/theme/check-login.php';
+
+// Déconnexion
+add_action('init', function () {
+    if (isset($_GET['plai_logout'])) {
+        plai_logout();
+        wp_redirect('/connexion');
+        exit;
+    }
+});
 
 // Assets
 

@@ -1,0 +1,165 @@
+@use '../../../settings/variables/breakpoints';
+
+.login__form,
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+
+  @include breakpoints.tablet {
+    gap: 3.2rem;
+    max-width: 600px;
+  }
+
+  @include breakpoints.desktop {
+    gap: 4.4rem;
+    max-width: 800px;
+  }
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  @include breakpoints.tablet {
+    gap: 1rem;
+  }
+
+  @include breakpoints.desktop {
+    gap: 1.2rem;
+  }
+
+  label,
+  input,
+  input::placeholder,
+  select {
+    font-size: 1.4rem;
+    font-family: SourceSans, Arial, Helvetica, sans-serif;
+
+    @include breakpoints.tablet {
+      font-size: 1.6rem;
+    }
+
+    @include breakpoints.desktop {
+      font-size: 2rem;
+    }
+  }
+
+  label,
+  input {
+    color: var(--green);
+  }
+
+  label,
+  select,
+  select:not(:invalid),
+  select:invalid {
+    font-weight: 700;
+  }
+
+  input {
+    font-weight: 400;
+    border: 2px solid var(--green);
+
+    @include breakpoints.tablet {
+      border-width: 2.4px;
+    }
+
+    @include breakpoints.desktop {
+      border-width: 3.2px;
+    }
+  }
+
+  input::placeholder,
+  select option {
+    color: var(--grey);
+    font-weight: 400;
+  }
+
+  input,
+  select {
+    border-radius: 6px;
+    padding: 0.8rem;
+
+    @include breakpoints.tablet {
+      padding: 0.8rem 1rem;
+    }
+
+    @include breakpoints.desktop {
+      padding: 0.8rem 1.2rem;
+    }
+  }
+
+  select::picker(select) {
+    border: 2px solid var(--green);
+    border-radius: 6px;
+
+    @include breakpoints.tablet {
+      border-width: 2.4px;
+    }
+
+    @include breakpoints.desktop {
+      border-width: 3.2px;
+    }
+  }
+
+  input:focus {
+    background-color: var(--pale-green);
+    outline: none;
+  }
+
+  select {
+    width: 100%;
+    border: none;
+    background-color: var(--green);
+    color: var(--pale-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  select, select::picker(select) {
+    appearance: base-select;
+  }
+
+  select::picker(select) {
+    background-color: var(--pale-green);
+  }
+
+  select::picker-icon {
+    content: '';
+    display: inline-block;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-image: url('/wp-content/themes/plai/assets/svg/select.svg');
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: 0.2s ease-in-out;
+    background-color: var(--pale-green);
+  }
+
+  select:hover {
+    background-color: var(--green-hover);
+  }
+
+  select option {
+    color: var(--grey);
+    padding: 0.8rem 0;
+  }
+
+  select option:not(.blocked-schools):hover {
+    background-color: var(--pale-green-hover);
+  }
+
+  .blocked-schools {
+    background-color: var(--pale-grey);
+    color: var(--grey);
+  }
+}
+
+.action-submit {
+  align-self: end;
+}
