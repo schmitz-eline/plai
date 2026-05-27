@@ -19,7 +19,6 @@ function ajax_request_access(): void
     $allowed_domains = [
         '@ens.ecl.be',
         '@ecl.be',
-        '@gmail.com', // TODO: enlever -> juste pour tester
         '@neupre.be'
     ];
 
