@@ -110,6 +110,7 @@
     .card__title--alert:before,
     .card__detailed-list__title:before,
     .card__awareness-list__item:before,
+    .card__resource__description::before,
     .card__link {
       background-color: var(--pink);
     }
@@ -125,6 +126,10 @@
 
     .card__link span:after {
       background-color: var(--pale-pink);
+    }
+
+    .card__resource__link {
+      border-color: var(--pink);
     }
   }
 
@@ -143,6 +148,7 @@
     .card__title--alert:before,
     .card__detailed-list__title:before,
     .card__awareness-list__item:before,
+    .card__resource__description::before,
     .card__link {
       background-color: var(--blue);
     }
@@ -158,6 +164,10 @@
     .card__link:hover,
     .card__link:focus {
       background-color: var(--blue-hover);
+    }
+
+    .card__resource__link {
+      border-color: var(--blue);
     }
   }
 
@@ -176,6 +186,7 @@
     .card__title--alert:before,
     .card__detailed-list__title:before,
     .card__awareness-list__item:before,
+    .card__resource__description::before,
     .card__link {
       background-color: var(--green);
     }
@@ -191,6 +202,10 @@
     .card__link:hover,
     .card__link:focus {
       background-color: var(--green-hover);
+    }
+
+    .card__resource__link {
+      border-color: var(--green);
     }
   }
 }

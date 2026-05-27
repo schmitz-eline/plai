@@ -17,7 +17,7 @@ function plai_cpt_referents(): void
     $args = [
         'labels' => $labels,
         'description' => 'Les référents qui travaillent au PLAI',
-        'menu_position' => 28,
+        'menu_position' => 24,
         'public' => false,
         'show_ui' => true,
         'menu_icon' => 'dashicons-businesswoman',

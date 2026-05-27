@@ -3,7 +3,7 @@
 Template Name: Nos missions
 */
 
-// page privée
+// Page privée qui nécessite une connexion
 plai_require_login();
 
 get_header('private');

@@ -76,6 +76,15 @@ add_action('init', function () {
     }
 });
 
+// Récupérer l’id du CPT École de l’utilisateur connecté
+function get_current_user_school_id() {
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+
+    return $_SESSION['user_school_id'] ?? null;
+}
+
 // Assets
 
 function plai_asset(string $filename): string
