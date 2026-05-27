@@ -5,8 +5,9 @@ $text = get_field('footer_text', 'option');
 
 <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
 
-    <!-- TODO: sprite svg avec <svg> et <use> -->
-    <img src="<?= get_template_directory_uri() . '/assets/svg/logo-footer.svg' ?>" alt="Logo du PLAI">
+    <svg class="icon">
+        <use href="<?= get_template_directory_uri() . '/assets/svg/sprite.svg' ?>#logo-footer"></use>
+    </svg>
 
     <div class="footer__legal">
         <span class="footer__text text"><?= esc_html($text) ?></span>

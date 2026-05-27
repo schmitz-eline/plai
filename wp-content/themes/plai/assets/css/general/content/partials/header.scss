@@ -37,12 +37,14 @@
     transform: scale(1.05);
   }
 
-  &__home-link img {
+  &__home-link svg {
     width: 12rem;
+    height: 3rem;
   }
 
   &__logo-falc {
     width: 3.6rem;
+    height: 3.6rem;
   }
 
   &__nav {
