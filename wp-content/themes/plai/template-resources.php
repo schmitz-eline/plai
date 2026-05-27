@@ -3,7 +3,6 @@
 Template Name: Ressources
 */
 
-
 // Récupérer les bonnes sensibilisations à afficher pour l’école de l’utilisateur connecté
 $school_id = get_current_user_school_id();
 $awareness_list = get_field('followed_awareness', $school_id);
