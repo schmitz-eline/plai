@@ -17,7 +17,7 @@ function plai_cpt_awareness(): void
     $args = [
         'labels' => $labels,
         'description' => 'Les sensibilisations proposées par le PLAI',
-        'menu_position' => 24,
+        'menu_position' => 28,
         'public' => false,
         'show_ui' => true,
         'menu_icon' => 'dashicons-lightbulb',

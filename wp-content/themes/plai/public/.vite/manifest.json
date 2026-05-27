@@ -1,6 +1,6 @@
 {
   "wp-content/themes/plai/assets/css/styles.scss": {
-    "file": "assets/scss-Bl-3b-Mx.css",
+    "file": "assets/scss-DslhsW8w.css",
     "src": "wp-content/themes/plai/assets/css/styles.scss",
     "isEntry": true
   },
@@ -47,7 +47,7 @@
     "src": "wp-content/themes/plai/assets/svg/book.svg"
   },
   "wp-content/themes/plai/assets/svg/close-modal.svg": {
-    "file": "assets/close-modal-D8E6zuI4.svg",
+    "file": "assets/close-modal-CUPBcuMB.svg",
     "src": "wp-content/themes/plai/assets/svg/close-modal.svg"
   },
   "wp-content/themes/plai/assets/svg/falc-icon.svg": {
@@ -58,12 +58,20 @@
     "file": "assets/file-BYitkbk-.svg",
     "src": "wp-content/themes/plai/assets/svg/file.svg"
   },
+  "wp-content/themes/plai/assets/svg/image.svg": {
+    "file": "assets/image-VVAJe_Ek.svg",
+    "src": "wp-content/themes/plai/assets/svg/image.svg"
+  },
   "wp-content/themes/plai/assets/svg/info.svg": {
     "file": "assets/info-D3FGGh1j.svg",
     "src": "wp-content/themes/plai/assets/svg/info.svg"
   },
+  "wp-content/themes/plai/assets/svg/link.svg": {
+    "file": "assets/link-Ccc6KDHm.svg",
+    "src": "wp-content/themes/plai/assets/svg/link.svg"
+  },
   "wp-content/themes/plai/assets/svg/login.svg": {
-    "file": "assets/login-DBERUipm.svg",
+    "file": "assets/login-_Hrrqs-p.svg",
     "src": "wp-content/themes/plai/assets/svg/login.svg"
   },
   "wp-content/themes/plai/assets/svg/logout.svg": {
@@ -75,15 +83,19 @@
     "src": "wp-content/themes/plai/assets/svg/mail.svg"
   },
   "wp-content/themes/plai/assets/svg/select.svg": {
-    "file": "assets/select-TIxLRXnh.svg",
+    "file": "assets/select-Jdnw3p0o.svg",
     "src": "wp-content/themes/plai/assets/svg/select.svg"
   },
   "wp-content/themes/plai/assets/svg/send.svg": {
-    "file": "assets/send-Cc7Xcy8t.svg",
+    "file": "assets/send-ByOk2BHh.svg",
     "src": "wp-content/themes/plai/assets/svg/send.svg"
   },
   "wp-content/themes/plai/assets/svg/target.svg": {
     "file": "assets/target-D8nkyI75.svg",
     "src": "wp-content/themes/plai/assets/svg/target.svg"
+  },
+  "wp-content/themes/plai/assets/svg/video.svg": {
+    "file": "assets/video-D-Ncy6Hs.svg",
+    "src": "wp-content/themes/plai/assets/svg/video.svg"
   }
 }

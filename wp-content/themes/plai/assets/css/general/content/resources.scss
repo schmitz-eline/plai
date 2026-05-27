@@ -1,0 +1,119 @@
+@use '../../settings/variables/breakpoints';
+
+.card__resource__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  @include breakpoints.tablet {
+    gap: 1.6rem;
+  }
+
+  @include breakpoints.desktop {
+    gap: 2rem;
+  }
+}
+
+.card__resource__link {
+  display: flex;
+  background-color: var(--white);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 1.2rem;
+  transition: 0.2s ease-in-out;
+
+  @include breakpoints.tablet {
+    border-width: 2.4px;
+    border-radius: 8px;
+    padding: 1.6rem;
+  }
+
+  @include breakpoints.desktop {
+    border-width: 3.2px;
+    border-radius: 12px;
+    padding: 2rem;
+  }
+}
+
+.card__resource__link:hover {
+  scale: 1.05;
+}
+
+.card__resource__description {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  @include breakpoints.tablet {
+    gap: 1.6rem;
+  }
+
+  @include breakpoints.desktop {
+    gap: 2rem;
+  }
+}
+
+.card__resource__description::before {
+  content: '';
+  display: inline-block;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  width: 1.6rem;
+
+  @include breakpoints.tablet {
+    width: 2rem;
+  }
+
+  @include breakpoints.desktop {
+    width: 2.4rem;
+  }
+}
+
+.card__resource__link--file .card__resource__description::before {
+  mask-image: url('/wp-content/themes/plai/assets/svg/file.svg');
+  height: 1.8rem;
+
+  @include breakpoints.tablet {
+    height: 2.2rem;
+  }
+
+  @include breakpoints.desktop {
+    height: 2.6rem;
+  }
+}
+
+.card__resource__link--link .card__resource__description::before,
+.card__resource__link--image .card__resource__description::before {
+  height: 1.6rem;
+
+  @include breakpoints.tablet {
+    height: 2rem;
+  }
+
+  @include breakpoints.desktop {
+    height: 2.4rem;
+  }
+}
+
+.card__resource__link--link .card__resource__description::before {
+  mask-image: url('/wp-content/themes/plai/assets/svg/link.svg');
+}
+
+.card__resource__link--image .card__resource__description::before {
+  mask-image: url('/wp-content/themes/plai/assets/svg/image.svg');
+}
+
+.card__resource__link--video .card__resource__description::before {
+  mask-image: url('/wp-content/themes/plai/assets/svg/video.svg');
+  height: 1.2rem;
+
+  @include breakpoints.tablet {
+    height: 1.6rem;
+  }
+
+  @include breakpoints.desktop {
+    height: 2rem;
+  }
+}

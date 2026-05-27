@@ -55,6 +55,13 @@ function ajax_login_user(): void
     // Connexion sécurisée via le cookie HMAC
     plai_login($email);
 
+    // Pour afficher les bonnes données sur les pages de ressources et de contact : démarrer la session et stocker l'école
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+
+    $_SESSION['user_school_id'] = $school_post->ID;
+
     // Succès
     wp_send_json_success([
         'message' => 'Connexion réussie.',
