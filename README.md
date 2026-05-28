@@ -166,4 +166,4 @@ Contenus disponibles :
 
 ---
 
-Réalisé par Eline Schmitz, étudiante en 2ème année d’infographie à la HEPL.
+Visitez le [site du PLAI](https://plai.eline-schmitz.com/) réalisé par Eline Schmitz, étudiante en 2ème année d’infographie à la HEPL.
