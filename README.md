@@ -53,14 +53,15 @@ Parents (informations générales uniquement).
 - Message central : « Parlez-en à l’école ».
 - Aucun accès aux outils pédagogiques ni aux aménagements spécifiques.
 
-### Page Enseignants (protégée)
-Accès sécurisé via :
+### Pages protégées
+Accès sécurisé via les formulaires de demande d’accès et de connexion :
 - Adresse institutionnelle et numéro FASE.
 - Validation manuelle.
 
 Contenus disponibles :
-- Historique des animations/sensibilisations validées.
+- Historique des sensibilisations validées.
 - Ressources pédagogiques et outils numériques.
+- Contact du référent associé à l’école
 
 ---
 
