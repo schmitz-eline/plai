@@ -1,11 +1,10 @@
-# Projet client - PLAI
+# Projet client - PLAI (Pôle Liégeois d'Accompagnement vers une école Inclusive)
 
 ## 1. Contexte
 
 Ceci est un projet client réalisé dans le cadre du cours de Design Web en 2ème année d’infographie à la HEPL.
 
-Le site du PLAI vise à soutenir les équipes éducatives et les élèves à besoins spécifiques, tout en respectant strictement le cadre légal, éthique et organisationnel du service.
-Il s’adresse principalement aux enseignants du fondamental et du secondaire, partenaires du pôle.
+Le site du PLAI (Pôle Liégeois d'Accompagnement vers une école Inclusive) vise à soutenir les équipes éducatives et les élèves à besoins spécifiques. Il s’adresse principalement aux enseignants du fondamental et du secondaire, partenaires du pôle.
 
 ---
 
